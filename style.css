@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Nunito';
+  background-image: linear-gradient(150deg,#000717,#6901c3);
+  
+  height: 100vh;
+}
+  
+img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   margin-top: 6rem;
+   width: 10rem;
+   height: auto;
+   object-fit:cover;
+   clip-path: circle();
+}
+ 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:2.5rem
+}
+
+a {
+  background: rgba(71, 32, 149, 0.185);
+  height: 4rem;
+  width: 15rem;
+  
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  
+  
+
+}
+
+a:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-image: linear-gradient(150deg,#6901c3,#000717);
+  transition: 0.2s;
+  color: rgb(227, 227, 227);
+}
+
+a:hover svg  path{
+  stroke: white;
+  fill: white;
+  transition: 2s;
+}
+
+svg {
+  margin-right: 2rem ;
+  margin-left: 3.5rem ;
+}
+
+
+p {
+  margin: 3.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  -webkit-font-smoothing:antialiased;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-b {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+
+
+@media (min-width: 900px) {
+  
+  * {
+    margin:0;
+    
+  }
+  
+  .container {
+    padding:0;
+   
+    margin-top:10rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  img {
+   
+    margin-right: 4rem;
+    margin-bottom:1rem;
+    width: 24rem;
+  }
+
+  section p {
+    margin-top: 5rem;
+    
+  }
+
+}
